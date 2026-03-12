@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basquete - A Bola que Pula</title>
+    <style>
+        /* CSS: Estilos para o site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #ff5733;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .button {
+            background-color: #ff5733;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e04e28;
+        }
+
+        #cesta {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4caf50;
+            display: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Bem-vindo ao Mundo do Basquete!</h1>
+        <p>O basquete é um esporte jogado entre duas equipes de cinco jogadores cada. O objetivo do jogo é marcar mais pontos que o time adversário, lançando uma bola de basquete através de um aro elevado.</p>
+        <button class="button" onclick="fazerCesta()">Fazer uma Cesta!</button>
+        <div id="cesta"></div>
+    </div>
+
+    <script>
+        // JavaScript: Função para mostrar a mensagem quando a cesta for feita
+        function fazerCesta() {
+            const mensagem = document.getElementById('cesta');
+            mensagem.style.display = 'block';
+            mensagem.textContent = 'Parabéns, você fez uma cesta!';
+        }
+    </script>
+
+</body>
+</html>
